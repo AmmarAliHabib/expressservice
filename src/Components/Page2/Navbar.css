@@ -20,6 +20,7 @@
   
   .navbar-logo {
     color: #fff;
+    padding-top: 0px;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;

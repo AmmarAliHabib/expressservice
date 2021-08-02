@@ -6,6 +6,8 @@ import { ServiceProvider } from './ServiceProviderPage/serviceProvider';
 import Admin from './Admin';
 import Final from './Login_register/final';
 import Spfinal from './Login_register/spfinal';
+import Booking from '../pages/Booking';
+import Services from '../pages/Services';
 
 export class AllComp extends React.Component {
 
@@ -21,7 +23,7 @@ export class AllComp extends React.Component {
                     <Link to='/serviceprovider'>Service Provider</Link>
                 </li>
                 <li>
-                    <Link to='/service'>Service</Link>
+                    <Link to='/services'>Services</Link>
                 </li>
                 <li>
                     <Link to='/admin'>Admin</Link>
@@ -41,6 +43,10 @@ export class AllComp extends React.Component {
                 <Route path='/admin' component={Admin} ></Route>
                 <Route path='/customerlogin' component={Final} ></Route>
                 <Route path='/serviceproviderlogin' component={Spfinal} ></Route>
+                <Route path='/book' component={Booking} exact></Route>
+                <Route path='/services' component={Services} exact></Route>
+
+
 
             </Switch>    
             

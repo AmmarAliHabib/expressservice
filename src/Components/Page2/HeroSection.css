@@ -1,3 +1,4 @@
+
 .heroimg {
     object-fit: cover;
     width: 100%;
@@ -7,7 +8,7 @@
   }
   
   .hero-container {
-    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+    /*background: url('./plumber.jpg') center cover no-repeat;*/
     height: 100vh;
     width: 100%;
     display: flex;
