@@ -5,6 +5,7 @@ import HomeP from '../pages/HomeP';
 import { ServiceProvider } from './ServiceProviderPage/serviceProvider';
 import Admin from './Admin';
 import Final from './Login_register/final';
+import Spfinal from './Login_register/spfinal';
 import VerifyOtp from './Otp/verifyOtp';
 export class AllComp extends React.Component {
 constructor(){
@@ -31,11 +32,14 @@ getPhoneNumber=(pno)=>{
                     <VerifyOtp loadChangeafterOtp={this.loadChangeafterOtp} getPhoneNumber={this.getPhoneNumber}/>
                 </Route>
                 <Route exact path= '/' component={Home} exact ></Route>
-                <Route path='/serviceprovider' component={ServiceProvider} exact></Route>
-                <Route path='/service' component={HomeP} exact></Route>
+                <Route path='/serviceprovider' component={ServiceProvider} ></Route>
+                <Route path='/service' component={HomeP} ></Route>
                 <Route path='/admin' component={Admin} ></Route>
                 <Route path='/login'>
                     <Final count={this.state.count} pno={this.state.pno} />
+                </Route>
+                <Route path ='/splogin'>
+                    <Spfinal count={this.state.count} pno={this.state.pno}  />
                 </Route>
             </Switch>    
             
